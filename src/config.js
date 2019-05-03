@@ -3,6 +3,7 @@
  * URLWEBHTTP 是调用后台接口域名
  */
 let URLWEBHTTP = '';
+let timeout = 5000;
 switch (process.env.VUE_APP_CURRENTMODE) {
     case 'development':
         // 本地开发
@@ -18,5 +19,6 @@ switch (process.env.VUE_APP_CURRENTMODE) {
         break;
 }
 export default {
-    URLWEBHTTP
+    URLWEBHTTP,
+    timeout
 }
